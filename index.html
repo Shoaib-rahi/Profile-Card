@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+    }
+    .image{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        padding: 3px;
+        background-color: #4070f4;
+        margin-bottom: 15px;
+    }
+    .profile-card{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+        max-width: 370px;
+        width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    padding: 25px;
+    }
+    .profile-card::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 36%;
+        left: 0;
+        top: 0;
+        background-color: blue;
+        border-radius: 24px 24px 0px 0px;
+    }
+    .image .profile-image{
+     
+        width: 100%;
+        height: 100%;
+       object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 300;
+}
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link{
+    text-decoration: none;
+    margin: 0px 8px;
+    background-color: #4070f4;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all .5s ease-in-out;
+}
+.link:hover{
+    transform: scale(90%);
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .btn{
+    padding: 8px 25px;
+    border: none;
+    border-radius: 34px;
+    background-color: #4070f4;
+    color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+    font-size: 15px ;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+}
+.buttons .btn:hover{
+    background-color: #4267f2;
+    transform: scale(90%);
+}
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0px 20px;
+    border-right: 2px solid #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+.data:last-child{
+    border-right: none;
+}
+
+</style>
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="assets/images/jonson2.jpeg" alt="" class="profile-image">
+        </div>
+        <div class="text-data">
+            <span class="name">Coading lab</span>
+            <span class="job">youtuber and blogger</span>
+        </div>
+        <div class="media-buttons">
+            <a href="#" style="background: #4267f2 ;" class="link">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" style="background: #1da1f2;" class="link">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#"  style="background:#e1306c ;"class="link">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" style="background:#ff0000 ;" class="link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <div class="buttons">
+            <button class="btn">Subscribe</button>
+            <button class="btn">Message</button>
+        </div>
+        <div class="analytics">
+            
+                <div class="data">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="number">60k</span>
+                </div>
+                <div class="data">
+                    <i class="fa-regular fa-comment"></i>
+                    <span class="number">20k</span>
+                </div>
+                <div class="data">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    <span class="number">40k</span>
+                </div>
+            
+        </div>
+        
+    </div>
+<script src="prati.js"></script>
+</body>
+</html>
